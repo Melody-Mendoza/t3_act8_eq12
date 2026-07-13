@@ -1,7 +1,18 @@
 import "../styles/Login.css";
+import {usarLogin} from "../hooks/login.js"
 import { UserRound } from "lucide-react";
 
 function Login() {
+
+  const {
+    userName,
+    SetUserName,
+    contraseña,
+    SetContraseña,
+    error,
+    handleSubmit
+  } = usarLogin();
+
   return (
     <div className="login-container">
 
@@ -18,13 +29,17 @@ function Login() {
 
           <p>Inicia sesión para continuar</p>
 
-          <form>
+          <form onSubmit={handleSubmit}>
+
+            {error && <p className="error">{error}</p> }
 
             <div className="input-group">
               <label>Usuario</label>
               <input
                 type="text"
                 placeholder="Ingresa tu usuario"
+                value={userName}
+                onChange={(e) => SetUserName (e.target.value)}
               />
             </div>
 
@@ -33,6 +48,8 @@ function Login() {
               <input
                 type="password"
                 placeholder="Ingresa tu contraseña"
+                value={contraseña}
+                onChange={(e) => SetContraseña (e.target.value)}
               />
             </div>
 
