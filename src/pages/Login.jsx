@@ -1,4 +1,5 @@
 import "../styles/Login.css";
+import { UserRound } from "lucide-react";
 
 function Login() {
   return (
@@ -11,9 +12,8 @@ function Login() {
         <div className="login-content">
 
           <div className="logo">
-            
+            <UserRound size={34} color="white" strokeWidth={2.5} />
           </div>
-
           <h1>ControlSys</h1>
 
           <p>Inicia sesión para continuar</p>

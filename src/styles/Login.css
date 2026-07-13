@@ -1,270 +1,266 @@
-/* ===========================
-   RESET
-=========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-body{
-    background:#DDD8C4;
+body {
+    background: #DDD8C4;
 }
 
-/* ===========================
-   CONTENEDOR
-=========================== */
+.login-container {
 
-.login-container{
+    width: 100%;
+    min-height: 100vh;
 
-   width:100%;
-    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:30px;
+    padding: 30px;
 
 }
 
-/* ===========================
-   TARJETA
-=========================== */
+.login-card {
 
-.login-card{
+    width: 720px;
+    min-height: 500px;
 
-    width:720px;
-    min-height:500px;
+    display: flex;
 
-    display:flex;
+    background: #fff;
 
-    background:#fff;
+    border-radius: 18px;
 
-    border-radius:18px;
+    overflow: hidden;
 
-    overflow:hidden;
-
-    box-shadow:0 18px 35px rgba(0,0,0,.25);
-   
-
-}
-
-/* ===========================
-   BARRA IZQUIERDA
-=========================== */
-
-.login-decoration{
-
-   width:85px;
-    background:#50808E;
-
-}
-
-/* ===========================
-   CONTENIDO
-=========================== */
-
-.login-content{
-
-    flex:1;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    padding:55px;
-
-}
-
-/* ===========================
-   LOGO
-=========================== */
-
-.logo{
-
-    width:65px;
-    height:65px;
-
-    border-radius:50%;
-
-    background:#50808E;
-
-    margin-bottom:10px;
-
-}
-
-/* ===========================
-   TITULOS
-=========================== */
-
-.login-content h1{
-
-    color:#2F3B44;
-
-    font-size:40px;
-
-    margin-bottom:20px;
-
-    font-weight:700;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .25);
+    animation: aparecer .6s ease;
 
 
 }
 
-.login-content p{
+.login-decoration {
 
-    color:#6B7280;
+    width: 85px;
 
-    font-size:18px;
-
-    margin-bottom:45px;
-    margin-top: 0;
-
-}
-
-/* ===========================
-   FORMULARIO
-=========================== */
-
-form{
-
-    width:100%;
-    max-width:400px;
+    background: linear-gradient(180deg,
+            #50808E,
+            #69A297);
 
 }
 
-/* ===========================
-   INPUTS
-=========================== */
 
-.input-group{
+.login-content {
 
-    display:flex;
+    flex: 1;
 
-    flex-direction:column;
+    display: flex;
 
-    align-items:flex-start;
+    flex-direction: column;
 
-    margin-bottom:24px;
+    align-items: center;
 
-}
-
-.input-group label{
-
-    width:100%;
-
-    text-align:left;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    color:#2F3B44;
-
-    margin-bottom:8px;
+    padding: 55px;
 
 }
 
-.input-group input{
+.logo {
 
-    width:100%;
+    width: 70px;
+    height: 70px;
 
-    height:48px;
+    display: flex;
 
-    background:#ffffff;
+    justify-content: center;
 
-    color:#2F3B44;
+    align-items: center;
 
-    border:1.5px solid #A3C9A8;
+    background: #50808E;
 
-    border-radius:10px;
+    border-radius: 50%;
 
-    outline:none;
+    margin-bottom: 18px;
 
-    padding:0 15px;
-
-    font-size:15px;
-
-    transition:.3s;
+    box-shadow: 0 8px 20px rgba(80, 128, 142, .25);
 
 }
 
-.input-group input::placeholder{
+.login-content h1 {
 
-    color:#9CA3AF;
+    font-size: 54px;
 
-}
+    font-weight: 700;
 
-.input-group input:focus{
+    color: #2F3B44;
 
-    border-color:#50808E;
+    line-height: 1.2;
 
-    box-shadow:0 0 6px rgba(80,128,142,.30);
-
-}
-
-/* ===========================
-   BOTON
-=========================== */
-
-button{
-
-    width:170px;
-
-    height:46px;
-
-    display:block;
-
-    margin:35px auto 0;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#50808E;
-
-    color:white;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    box-shadow:0 8px 18px rgba(0,0,0,.18);
+    margin-bottom: 12px;
 
 }
 
-button:hover{
+.login-content p {
 
-    background:#69A297;
+    font-size: 18px;
 
-}
+    color: #6B7280;
 
-/* ===========================
-   LINK
-=========================== */
-
-.login-content a{
-
-    margin-top:28px;
-
-    color:#50808E;
-
-    text-decoration:none;
-
-    font-size:14px;
+    margin-bottom: 45px;
 
 }
 
-.login-content a:hover{
+form {
 
-    text-decoration:underline;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin-bottom: 24px;
+
+}
+
+.input-group label {
+
+    width: 100%;
+
+    text-align: left;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #2F3B44;
+
+    margin-bottom: 8px;
+
+}
+
+.input-group input {
+
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 18px;
+
+    border: 2px solid #A3C9A8;
+
+    border-radius: 12px;
+
+    background: white;
+
+    font-size: 16px;
+
+    transition: .25s;
+
+}
+
+.input-group input::placeholder {
+
+    color: #9CA3AF;
+
+}
+
+.input-group input:focus {
+
+    border-color: #50808E;
+
+    box-shadow: 0 0 0 5px rgba(80, 128, 142, .12);
+
+}
+
+button {
+
+    width: 180px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #50808E;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin: 35px auto 0;
+
+    display: block;
+
+    transition: .25s;
+
+    box-shadow: 0 8px 20px rgba(80, 128, 142, .30);
+    letter-spacing: .5px;
+
+}
+
+button:hover {
+
+
+
+    background: #69A297;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 22px rgba(80, 128, 142, .30);
+
+}
+
+button:active {
+
+    transform: scale(.98);
+
+}
+
+.login-content a {
+
+    margin-top: 28px;
+
+    color: #50808E;
+
+    text-decoration: none;
+
+    transition: .2s;
+
+}
+
+.login-content a:hover {
+
+    color: #69A297;
+
+}
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
 
 }
