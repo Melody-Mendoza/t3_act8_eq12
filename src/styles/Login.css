@@ -168,7 +168,6 @@ form {
 }
 
 .input-group input::placeholder {
-
    color:#9CA3AF;
 
 }
@@ -178,7 +177,7 @@ form {
 
     border-color: #50808E;
 
-    box-shadow: 0 0 0 5px rgba(28, 137, 170, 0.12);
+    box-shadow: 0 0 0 5px rgba(23, 160, 202, 0.12);
 }
 
 
