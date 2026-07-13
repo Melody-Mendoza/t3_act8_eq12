@@ -154,11 +154,12 @@ form {
 
     padding: 0 18px;
 
-    border: 2px solid #A3C9A8;
+     border:2px solid #A3C9A8;
 
     border-radius: 12px;
 
     background: white;
+    color:#2F3B44;
 
     font-size: 16px;
 
@@ -168,17 +169,19 @@ form {
 
 .input-group input::placeholder {
 
-    color: #9CA3AF;
+   color:#9CA3AF;
 
 }
 
 .input-group input:focus {
+    outline:none;
 
     border-color: #50808E;
 
-    box-shadow: 0 0 0 5px rgba(80, 128, 142, .12);
-
+    box-shadow: 0 0 0 5px rgba(28, 137, 170, 0.12);
 }
+
+
 
 button {
 
